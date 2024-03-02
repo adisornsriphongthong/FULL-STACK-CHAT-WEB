@@ -5,9 +5,9 @@ const poolReader = {
         let connection: Connection;
         try {
             connection = await oracledb.getConnection({
-                user: process.env.USER,
-                password: process.env.PASSWORD,
-                connectString: process.env.CONNECTSTRING,
+                user: 'sys',
+                password: '0953314906Get*',
+                connectString: 'localhost:1521/orcl',
                 privilege: oracledb.SYSDBA,
             });
             const result = await connection.execute(query, param || {})

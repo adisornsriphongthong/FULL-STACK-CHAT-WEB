@@ -1,4 +1,10 @@
 export interface ILoginDataInput {
-    email: string,
-    password: string
+  username: string;
+  password: string;
+}
+
+export interface ILoginResponse {
+  id: string;
+  username: string;
+  password: string;
 }
